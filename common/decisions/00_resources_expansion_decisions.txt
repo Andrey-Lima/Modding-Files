@@ -1,0 +1,224 @@
+resources_expansion_category = {
+
+
+	medium_oil_expansion = {
+		icon = oil
+		allowed = { always = yes }
+		fire_only_once = no
+		days_remove = 45
+		days_re_enable = 0
+		
+		available = {
+			any_owned_state = {
+				has_resources_amount = {
+					resource = oil
+					amount > -1
+				}
+			}
+			NOT = { has_decision = small_oil_expansion }
+			NOT = { has_decision = medium_oil_expansion }
+			NOT = { has_decision = huge_oil_expansion }
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					has_resources_amount = {
+							resource = oil
+							amount > -1
+					}
+				}
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+		}
+	}
+
+
+	medium_aluminium_expansion = {
+	  icon = aluminium
+	  allowed = { always = yes }
+	  fire_only_once = no
+	  days_remove = 45
+	  days_re_enable = 0
+
+
+	  available = {
+	    any_owned_state = {
+	      has_resources_amount = {
+	        resource = aluminium
+	        amount > -1
+	      }
+	    }
+			NOT = { has_decision = small_aluminium_expansion }
+			NOT = { has_decision = medium_aluminium_expansion }
+			NOT = { has_decision = huge_aluminium_expansion }
+	  }
+
+	  remove_effect = {
+	    random_owned_state = {
+	      limit = {
+	        has_resources_amount = {
+	            resource = aluminium
+	            amount > -1
+	        }
+	      }
+	      add_resource = {
+	        type = aluminium
+	        amount = 12
+	      }
+	    }
+	  }
+	}
+
+
+	medium_rubber_expansion = {
+	  icon = rubber
+	  allowed = { always = yes }
+	  fire_only_once = no
+	  days_remove = 45
+	  days_re_enable = 0
+
+
+	  available = {
+	    any_owned_state = {
+	      has_resources_amount = {
+	        resource = rubber
+	        amount > -1
+	      }
+	    }
+			NOT = { has_decision = small_rubber_expansion }
+			NOT = { has_decision = medium_rubber_expansion }
+			NOT = { has_decision = huge_rubber_expansion }
+	  }
+
+	  remove_effect = {
+	    random_owned_state = {
+	      limit = {
+	        has_resources_amount = {
+	            resource = rubber
+	            amount > -1
+	        }
+	      }
+	      add_resource = {
+	        type = rubber
+	        amount = 12
+	      }
+	    }
+	  }
+	}
+
+
+	medium_tungsten_expansion = {
+	  icon = tungsten
+	  allowed = { always = yes }
+	  fire_only_once = no
+	  days_remove = 45
+	  days_re_enable = 0
+
+
+	  available = {
+	    any_owned_state = {
+	      has_resources_amount = {
+	        resource = tungsten
+	        amount > -1
+	      }
+	    }
+			NOT = { has_decision = small_tungsten_expansion }
+			NOT = { has_decision = medium_tungsten_expansion }
+			NOT = { has_decision = huge_tungsten_expansion }
+	  }
+
+	  remove_effect = {
+	    random_owned_state = {
+	      limit = {
+	        has_resources_amount = {
+	            resource = tungsten
+	            amount > -1
+	        }
+	      }
+	      add_resource = {
+	        type = tungsten
+	        amount = 12
+	      }
+	    }
+	  }
+	}
+
+
+	medium_steel_expansion = {
+		icon = steel
+		allowed = { always = yes }
+		fire_only_once = no
+		days_remove = 45
+		days_re_enable = 0
+
+
+		available = {
+			any_owned_state = {
+				has_resources_amount = {
+					resource = steel
+					amount > -1
+				}
+			}
+			NOT = { has_decision = small_steel_expansion }
+			NOT = { has_decision = medium_steel_expansion }
+			NOT = { has_decision = huge_steel_expansion }
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					has_resources_amount = {
+							resource = steel
+							amount > -1
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+	}
+
+	
+
+	medium_chromium_expansion = {
+	  icon = chromium
+	  allowed = { always = yes }
+	  fire_only_once = no
+	  days_remove = 45
+	  days_re_enable = 0
+
+
+	  available = {
+	    any_owned_state = {
+	      has_resources_amount = {
+	        resource = chromium
+	        amount > -1
+	      }
+	    }
+			NOT = { has_decision = small_chromium_expansion }
+			NOT = { has_decision = medium_chromium_expansion }
+			NOT = { has_decision = huge_chromium_expansion }
+	  }
+
+	  remove_effect = {
+	    random_owned_state = {
+	      limit = {
+	        has_resources_amount = {
+	            resource = chromium
+	            amount > -1
+	        }
+	      }
+	      add_resource = {
+	        type = chromium
+	        amount = 12
+	      }
+	    }
+	  }
+	}
+}
